@@ -1,0 +1,15 @@
+{
+  "name": "learn-orchard",
+  "version": "0.0.1",
+  "description": "Website that aggregates learning resources across the web for Orchard CMS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "orcahrdcns",
+    "angularjs"
+  ],
+  "author": "Steve Taylor (Avastec)",
+  "license": "ISC"
+}
