@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+.txt-rt {
+  text-align: right; }
+
+/* text align right */
+.txt-lt {
+  text-align: left; }
+
+/* text align left */
+.txt-center {
+  text-align: center; }
+
+/* text align center */
+.float-rt {
+  float: right; }
+
+/* float right */
+.float-lt {
+  float: left; }
+
+/* float left */
+.clear {
+  clear: both; }
+
+/* clear float */
+.pos-relative {
+  position: relative; }
+
+/* Position Relative */
+.pos-absolute {
+  position: absolute; }
+
+/* Position Absolute */
+.vertical-base {
+  vertical-align: baseline; }
+
+/* vertical align baseline */
+.vertical-top {
+  vertical-align: top; }
+
+/* vertical align top */
+nav.vertical ul li {
+  display: block; }
+
+/* vertical menu */
+nav.horizontal ul li {
+  display: inline-block; }
+
+/* horizontal menu */
+img {
+  max-width: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #F0EFEE; }
+
+#main {
+  margin-top: 9em; }
+
+#tiles {
+  list-style-type: none;
+  position: relative;
+  /** Needed to ensure items are laid out relative to this container **/
+  margin: 0;
+  padding: 0; }
+
+#tiles li:hover img {
+  opacity: 0.8; }
+
+/**
+ * Grid items
+ */
+#tiles li {
+  width: 280px;
+  background-color: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  display: none;
+  cursor: pointer;
+  border-radius: 0.2em; }
+
+#tiles li img {
+  border-top-left-radius: 0.2em;
+  border-top-right-radius: 0.2em; }
+
+#tiles li.inactive {
+  visibility: hidden;
+  opacity: 0; }
+
+#tiles li img {
+  display: block;
+  width: 100%; }
+
+/**
+ * Grid item text
+ */
+footer {
+  text-align: center; }
+
+footer a {
+  color: #435DC5;
+  text-decoration: none; }
+
+.wrap {
+  width: 80%;
+  margin: 0 auto; }
+
+.header {
+  background: #FFF;
+  padding: 1.5em 0 1.2em;
+  border-bottom: 1px solid rgba(214, 213, 212, 0.64);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999; }
+
+.logo {
+  float: left; }
+
+.logo img {
+  display: inline-block; }
+
+.top-searchbar {
+  float: left;
+  width: 46%;
+  position: relative;
+  margin-left: 2em; }
+
+.top-searchbar input[type="text"] {
+  margin-top: 0.55em;
+  width: 100%;
+  padding: 0.58em 1em;
+  border: 1px solid #E7E7E7;
+  transition: border-color 0.3s all;
+  -webkit-transition: border-color 0.3s all;
+  -moz-transition: border-color 0.3s all;
+  -o-transition: border-color 0.3s all;
+  outline: none;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -webkit-appearance: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #777;
+  position: relative; }
+
+.top-searchbar input[type="text"] {
+  background: #F7F6F6; }
+
+.top-searchbar input[type="text"]:hover {
+  border: 1px solid #DDDDDD; }
+
+.top-searchbar input[type="submit"] {
+  position: absolute;
+  background: url(../images/search-icon.png) no-repeat 0px 0px;
+  height: 26px;
+  width: 26px;
+  display: inline-block;
+  border: none;
+  top: 12px;
+  right: -22px;
+  outline: none;
+  cursor: pointer; }
+
+/*--media Quries for 640px-monitors-*/
+@media only screen and (max-width: 640px) and (min-width: 480px) {
+  #main {
+    margin-top: 7em; } }
+/*--media Quries for 480px-monitors-*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  #main {
+    margin-top: 9.5em; } }
+/*--media Quries for 320px-monitors-*/
+@media only screen and (max-width: 320px) and (min-width: 240px) {
+  #main {
+    margin-top: 9em; }
+
+  #tiles li {
+    width: 266px; } }

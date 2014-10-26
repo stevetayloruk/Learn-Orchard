@@ -1,0 +1,21 @@
+{
+  "name": "learn-orchard",
+  "version": "0.0.1",
+  "homepage": "https://github.com/stevetayloruk/Learn-Orchard",
+  "authors": [
+    "Steve Taylor (Avastec)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-deckgrid": "~0.4.4",
+    "angular": "~1.3.0"
+  }
+}
